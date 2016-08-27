@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.taher.movieapp.MovieDetail"
+    android:nestedScrollingEnabled="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:id="@+id/movieTitle"
+                android:background="#FF029789"
+                android:text="Chappie"
+                android:textSize="40sp"
+                android:textColor="#ffffff"
+                android:paddingBottom="25sp"
+                android:paddingTop="30sp"
+                android:paddingLeft="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:nestedScrollingEnabled="true">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/testimg"
+                android:id="@+id/movieImage" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:orientation="vertical"
+                android:nestedScrollingEnabled="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015"
+                    android:textSize="20sp"
+                    android:textColor="#FF767676"
+                    android:id="@+id/year" />
+
+                <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:text="120min"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:textColor="#FF767676"
+                    android:id="@+id/duration" />
+                -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="11dp"
+                    android:textSize="11sp"
+                    android:text="8.1/10"
+                    android:textColor="#000000"
+                    android:id="@+id/rate" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="33dp"
+                    android:background="#ff87e4db"
+                    android:text="Mark as\nfavorite"
+                    android:textColor="#646464"
+                    android:textSize="8sp"
+                    android:id="@+id/favorite"
+                    android:nestedScrollingEnabled="true" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test test test test test test test test test test test test test test test test test test test test test test test test test test "
+                android:textSize="14sp"
+                android:paddingBottom="10dp"
+                android:id="@+id/description" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FF767676"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:text="Trailers:"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/trailersListView"
+                android:paddingBottom="15dp"
+                android:nestedScrollingEnabled="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FF767676"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="7dp"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:text="Reviewers:"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/reviewersListView"
+                android:paddingBottom="40dp"
+                android:nestedScrollingEnabled="true"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

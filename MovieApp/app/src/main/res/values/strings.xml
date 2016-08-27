@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="API_KEY">aa3dfa6c3f6d71d5e1588f4bd42f53eb</string>
+    <string name="Img_PATH">http://image.tmdb.org/t/p/w500</string>
+    <string name="BASE_URL">http://api.themoviedb.org/3/movie/</string>
+
+</resources>
